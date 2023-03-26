@@ -1,0 +1,125 @@
+body {
+    background: #fbf1c7;
+    color: #3c3836;
+    font-family: 'Fira Mono', monospace;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.aqua {
+    color: #427b58;
+}
+
+.green {
+    color: #98971a;
+}
+
+#link{
+    color: #98971a;
+    position: relative;
+}
+
+#link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #98971a;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  
+}
+
+#link:hover::before{
+    transform: scaleX(1);
+}
+
+.red {
+    color: #cc241d;
+}
+
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style:italic
+}
+
+a{
+    text-decoration: none;
+    color: #282828;
+
+}
+
+li{
+    color: #282828;
+}
+
+#where-is-pic{
+    display: flex;
+    flex-direction: row;
+}
+
+#me{
+    width: 250px;
+    height: 250px;
+}
+
+#me:hover{
+    animation: rotation .8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+#logo{
+    width: 11px;
+    height: 10px;
+    padding-right: 5px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+}
+
+#project-social{
+    padding-bottom: 10px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    padding-bottom: 50px;
+}
+
+article > li {
+    padding-bottom: 10px;
+}
+
+code{
+    background: #282828;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 7px;
+    color: #fbf1c7;
+}
+
+footer{
+    padding-bottom: 10px;
+    font-style: italic;
+}
