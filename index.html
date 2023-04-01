@@ -1,57 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <meta name="description" content="Javier's Webpage (shitpost site)">
-    <meta name="keywords" content="Webpage, Blog">
-    <meta name="author" content="Caffeinated01 (Javier)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/52a14c51f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="description" content="Javier's Webpage (shitpost site)" />
+    <meta name="keywords" content="Webpage, Blog" />
+    <meta name="author" content="Caffeinated01 (Javier)" />
     <title>Javier's Webpage</title>
-</head>
-<body>
-    <div>
-        <h1>
-            <span class="aqua">import </span>
-            home
-            <span class="aqua">from </span>
-            <a href="/"><span id="link">'../caffeinated01.me'</span></a>
-        </h1>
+  </head>
+  <body>
+    <div id="nav">
+      <a href="/">
+        <div id="home">
+          <i class="fa-solid fa-house"></i>
+        </div>
+      </a>
+      <a href="/blog/">
+        <div id="blog">
+          <i class="fa-solid fa-newspaper"></i>
+        </div>
+      </a>
+      <div id="change-theme">
+        <i class="fa-solid fa-moon"></i>
+      </div>
     </div>
     <div id="main">
-        <h2><span class ="red">var </span>Introduction</h2>
-        <div id="where-is-pic">
-            <p>I am <span class="green">Javier</span>, my username is <span class="green">caffeinated01</span>. I'm a currently a student who likes gaming, coding, linux and anime. I'm a really boring person, as you can tell from the design of this webpage - as plain as my personality. Anyhow, thanks for stopping by.</p>
-            <img id="me" src="assets/chad.png" alt="chad">
-        </div>
-        <h2><span class="red">var </span>Blog</h2>
-        <p>Where I talk about topics or thoughts that come to my mind. My blog, my rules - don't roast my opinions. Read at your discretion. You have been warned. <a id="link" href="/blog/index.html">Goto</a></p>
-        <h2><span class="red">var </span>My Projects</h2>
+      <div class="box">
+        <h2 class="red">Introduction</h2>
+        <p>
+          I am <span class="green">Javier</span>, my username is
+          <span class="green">caffeinated01</span>. I'm a currently a student
+          who likes gaming, coding, linux and anime. I'm a really boring person,
+          as you can tell from the design of this webpage - as plain as my
+          personality. Anyhow, thanks for stopping by.
+        </p>
+      </div>
+      <div class="box">
+        <h2 class="red">Projects</h2>
+        <p>
+          I don't really have that many projects at the moment (school and
+          stuff). When I do have the time tho, I'll cook up some projects.
+        </p>
         <ul>
-            <li>
-                <div id="project-social">
-                    <img id="logo" src="assets/git.png" alt="git"><a href="https://github.com/caffeinated01" id="link">Github</a>
-                    <p>All my current projects and random repos</p>
-                </div>
-            </li>
+          <li>
+            <div class="project-social">
+              <img class="logo" src="assets/git.png" alt="git" /><a
+                href="https://github.com/caffeinated01"
+                id="link"
+                >Github</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="project-social">
+              <img class="logo" src="assets/crates.png" alt="git" /><a
+                href="https://crates.io/crates/affirmation-cli"
+                id="link"
+                >Affirmation CLI</a
+              >
+            </div>
+          </li>
         </ul>
-        <h2><span class="red">var </span>Socials</h2>
+      </div>
+      <div class="box">
+        <h2 class="red">Socials</h2>
         <ul>
-            <li>
-                <div id="project-social">
-                    <img id="logo" src="assets/discord.png" alt="discord"><a href="https://discord.gg/cH7XaqX6Dn" id="link">Discord</a>
-                    <p>My (totally active) Discord server</p>
-                </div>
-            </li>
-            <li>
-                <div id="project-social">
-                    <img id="logo" src="assets/youtube.png" alt="yt"><a href="https://www.youtube.com/channel/UC2gRae7uFScHEOPiuHCpGYA" id="link">Youtube</a>
-                    <p>I don't post much on Youtube</p>
-                </div>
-            </li>
+          <li>
+            <div class="project-social">
+              <img class="logo" src="assets/discord.png" alt="discord" /><a
+                href="https://discord.gg/cH7XaqX6Dn"
+                id="link"
+                >Discord</a
+              >
+              <p>My (totally active) Discord server</p>
+            </div>
+          </li>
+          <li>
+            <div class="project-social">
+              <img class="logo" src="assets/twitch.png" alt="yt" /><a
+                href="https://www.twitch.tv/caffeinated01"
+                id="link"
+                >Twitch</a
+              >
+              <p>I don't have much time to stream but whatever</p>
+            </div>
+          </li>
+          <li>
+            <div class="project-social">
+              <img class="logo" src="assets/twitter.png" alt="yt" /><a
+                href="https://twitter.com/caffeinated_01"
+                id="link"
+                >Twitter</a
+              >
+              <p>Don't ratio me please. Anyhow, not really active on twitter</p>
+            </div>
+          </li>
         </ul>
+      </div>
     </div>
-</body>
+    <script src="theme.js"></script>
+  </body>
 </html>

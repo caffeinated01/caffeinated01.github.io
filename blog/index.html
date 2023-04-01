@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <meta name="description" content="Javier's Webpage (shitpost site)">
-    <meta name="keywords" content="Webpage, Blog">
-    <meta name="author" content="Caffeinated01 (Javier)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/52a14c51f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="description" content="Javier's Webpage (shitpost site)" />
+    <meta name="keywords" content="Webpage, Blog" />
+    <meta name="author" content="Caffeinated01 (Javier)" />
     <title>Blog | Javier's Webpage</title>
-</head>
-<body>
-    <div id="name">
-        <a href="">
-            <h1>
-                <span class="aqua">import </span>
-                blog
-                <span class="aqua">from </span>
-                <a href="/"><span id="link">'../../caffeinated01.me'</span></a>
-            </h1>
-        </a>
+  </head>
+  <body>
+    <div id="nav">
+      <a href="/">
+        <div id="home">
+          <i class="fa-solid fa-house"></i>
+        </div>
+      </a>
+      <a href="/blog/">
+        <div id="blog">
+          <i class="fa-solid fa-newspaper"></i>
+        </div>
+      </a>
+      <div id="change-theme">
+        <i class="fa-solid fa-moon"></i>
+      </div>
     </div>
-    <h2><span class="red">var </span> Posts</h2>
-    <ul>
-        <li><span class="aqua">26/3/2023 </span>- <a href="/blog/hello-world.html"><span id="link">Hello world</span></a></li>
-    </ul>
-</body>
+    <div id="main">
+      <div class="box">
+        <h2 class="red">Posts</h2>
+        <p>
+          Where I talk about topics or thoughts that come to my mind. Read at
+          your discretion. You have been warned...
+        </p>
+        <ul>
+          <li>
+            <span class="aqua">26/3/2023 </span>-
+            <a href="/blog/hello-world.html"
+              ><span id="link">Hello world</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="../theme.js"></script>
+  </body>
 </html>
