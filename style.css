@@ -29,6 +29,18 @@
   color: var(--change-theme-color);
 }
 
+@keyframes bounce{
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 #nav {
   display: flex;
   flex-direction: row;
@@ -44,6 +56,7 @@ body {
   display: grid;
   place-items: center;
   align-content: center;
+  transition: 500ms;
 }
 
 .aqua {
@@ -54,12 +67,12 @@ body {
   color: #689d6a;
 }
 
-#link {
+.link {
   color: #689d6a;
   position: relative;
 }
 
-#link::before {
+.link::before {
   content: "";
   position: absolute;
   display: block;
@@ -72,7 +85,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-#link:hover::before {
+.link:hover::before {
   transform: scaleX(1);
 }
 
@@ -125,6 +138,7 @@ li {
   margin: 20px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   animation: flyIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: 500ms;
 }
 
 @keyframes flyIn {
