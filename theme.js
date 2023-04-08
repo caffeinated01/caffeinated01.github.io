@@ -3,8 +3,6 @@ const icon = document.getElementById("theme-icon");
 
 let darkMode = localStorage.getItem("darkMode");
 
-console.log(darkMode);
-
 const toggleLight = () => {
   document.body.classList.add("light");
   localStorage.setItem("darkMode", null);
